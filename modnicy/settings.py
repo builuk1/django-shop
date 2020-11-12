@@ -55,8 +55,8 @@ ROOT_URLCONF = 'modnicy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [str(BASE_DIR.joinpath('templates'))], # new
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

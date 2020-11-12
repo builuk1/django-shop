@@ -10,7 +10,7 @@
 'use strict'
 
 const childProcess = require('child_process')
-const vnu = require('ModnicaBootstrap/bootstrap-4.5.3/build/vnu-jar')
+const vnu = require('shop/static/shop/bootstrap-4.5.3/build/vnu-jar')
 
 childProcess.exec('java -version', (error, stdout, stderr) => {
   if (error) {
